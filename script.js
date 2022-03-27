@@ -21,3 +21,20 @@ function generateRow(book){
 
   return row;
 }
+
+function appendRow(row) {
+  let table = document.querySelector("#book-table");
+  table.appendChild(row);
+}
+
+function displayBooks() {
+  myLibrary.forEach((book)=>{
+    appendRow(generateRow(book))
+  })
+}
+
+
+book = {id: 0, title: "The Hobbit", author: "J.R.R Tolkien", year: 1930, read: false}
+
+addBookToLibrary(book)
+displayBooks()
