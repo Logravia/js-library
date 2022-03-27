@@ -6,3 +6,14 @@ function Book(data) {
   this.read = data.read;
 }
 
+function generateRow(book){
+  let row = document.createElement("tr");
+
+  Object.values(book).forEach((value)=>{
+    cell = document.createElement("td");
+    cell.textContent = value;
+    row.appendChild(cell);
+  })
+
+  return row;
+}
