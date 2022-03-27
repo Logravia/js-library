@@ -7,7 +7,29 @@
         <script src="script.js" defer></script>
     </head>
     <body>
+        <form>
+            <legend>Add a book to my library</legend>
+            <label for="title">Title</label>
+            <input id="title" name="title" type="text" value=""/>
 
+            <label for="author">Author</label>
+            <input id="author" name="author" type="text" value=""/>
 
+            <label for="year">Year</label>
+            <input id="year" name="year" type="number" value=""/>
+            <button id="submit-book-locally">Add</button>
+        </form>
+
+            <table id="book-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Year</th>
+                        <th>Read</th>
+                    </tr>
+                </thead>
+            </table>
     </body>
 </html>
