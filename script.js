@@ -1,3 +1,5 @@
+let myLibrary = [];
+
 function Book(data) {
   this.id = data.id;
   this.title = data.title;
