@@ -6,6 +6,10 @@ function Book(data) {
   this.read = data.read;
 }
 
+function addBookToLibrary(data) {
+  myLibrary.push(new Book(data))
+}
+
 function generateRow(book){
   let row = document.createElement("tr");
 
