@@ -38,6 +38,7 @@ function resetTableBody(){
 
 
 function displayBooks() {
+  resetTableBody()
   myLibrary.forEach((book)=>{
     appendRow(generateRow(book))
   })
