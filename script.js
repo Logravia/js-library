@@ -65,6 +65,19 @@ function gatherBookData(){
   return data
 }
 
+function deleteBtn(id){
+  btn = document.createElement("button");
+  btn.setAttribute("type", "button");
+  btn.setAttribute("value", id);
+
+  btn.addEventListener('click', (e)=>{
+    id = e.target.value;
+    deleteBook(id);
+    displayBooks();
+  });
+
+  return btn;
+}
 
 function readBtn(id){
   btn = document.createElement("button");
