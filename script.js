@@ -29,6 +29,14 @@ function appendRow(row) {
   table.appendChild(row);
 }
 
+function resetTableBody(){
+  document.querySelector("tbody").remove()
+  table = document.querySelector("#book-table")
+  tbody = document.createElement("tbody")
+  table.appendChild(tbody)
+}
+
+
 function displayBooks() {
   myLibrary.forEach((book)=>{
     appendRow(generateRow(book))
