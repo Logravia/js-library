@@ -53,7 +53,9 @@ function gatherBookData(){
   return data
 }
 
-book = {id: 0, title: "The Hobbit", author: "J.R.R Tolkien", year: 1930, read: false}
+let submitButton = document.querySelector("#submit-book")
 
-addBookToLibrary(book)
-displayBooks()
+submitButton.addEventListener('click', () => {
+  addBookToLibrary(gatherBookData())
+  displayBooks()
+});
