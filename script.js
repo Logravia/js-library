@@ -32,6 +32,14 @@ function generateRow(book){
     row.appendChild(cell);
   })
 
+  delete_cell = document.createElement("td");
+  update_cell = document.createElement("td");
+
+  delete_cell.appendChild(deleteBtn(book.id))
+  update_cell.appendChild(readBtn(book.id))
+
+  row.appendChild(delete_cell)
+  row.appendChild(update_cell)
   return row;
 }
 
