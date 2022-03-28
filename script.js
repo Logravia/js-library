@@ -65,6 +65,22 @@ function gatherBookData(){
   return data
 }
 
+
+function readBtn(id){
+  btn = document.createElement("button");
+  btn.setAttribute("type", "button");
+  btn.setAttribute("value", id);
+
+  btn.addEventListener('click', (e)=>{
+    id = e.target.value;
+    book = myLibrary[getBookIndex(id)];
+    book.read = book.read ? false : true
+    displayBooks();
+  });
+
+  return btn;
+}
+
 let submitButton = document.querySelector("#submit-book")
 
 submitButton.addEventListener('click', () => {
