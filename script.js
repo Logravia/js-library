@@ -69,7 +69,8 @@ function gatherBookData(){
   data.author = document.querySelector("#author").value
   data.year = document.querySelector("#year").value
   data.read = document.querySelector("#read").checked
-  data.id = myLibrary.size
+
+  data.id = myLibrary.length == 0 ? 0 : myLibrary[myLibrary.length-1].id + 1
   return data
 }
 
