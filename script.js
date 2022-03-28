@@ -43,6 +43,15 @@ function displayBooks() {
   })
 }
 
+function gatherBookData(){
+  data = {}
+  data.title = document.querySelector("#title").value
+  data.author = document.querySelector("#author").value
+  data.year = document.querySelector("#year").value
+  data.read = document.querySelector("#read").checked
+  data.id = myLibrary.size
+  return data
+}
 
 book = {id: 0, title: "The Hobbit", author: "J.R.R Tolkien", year: 1930, read: false}
 
