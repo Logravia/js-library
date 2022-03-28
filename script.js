@@ -8,6 +8,12 @@ function Book(data) {
   this.read = data.read;
 }
 
+function getBookIndex(id) {
+  for (let i = 0; i < myLibrary.length; i++) {
+    if (myLibrary[i].id == id) return i;
+  }
+}
+
 function addBookToLibrary(data) {
   myLibrary.push(new Book(data))
 }
