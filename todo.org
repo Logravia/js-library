@@ -1,0 +1,2 @@
+* [X] Read or checkbox
+* [X] Get data from checkbox
