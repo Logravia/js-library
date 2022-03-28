@@ -14,6 +14,11 @@ function getBookIndex(id) {
   }
 }
 
+function deleteBook(id) {
+  indexOfBook = getBookIndex;
+  myLibrary.splice(indexOfBook, 1);
+}
+
 function addBookToLibrary(data) {
   myLibrary.push(new Book(data))
 }
