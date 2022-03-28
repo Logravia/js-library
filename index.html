@@ -7,7 +7,7 @@
         <script src="script.js" defer></script>
     </head>
     <body>
-        <form>
+        <form id="book-form">
             <legend>Add a book to my library</legend>
             <label for="title">Title</label>
             <input id="title" name="title" type="text" value=""/>
@@ -17,7 +17,10 @@
 
             <label for="year">Year</label>
             <input id="year" name="year" type="number" value=""/>
-            <button id="submit-book-locally">Add</button>
+
+            <label for="read">Read</label>
+            <input id="read" name="year" type="checkbox" value="1"/>
+            <button id="submit-book" type="button">Add</button>
         </form>
 
             <table id="book-table">
@@ -30,6 +33,8 @@
                         <th>Read</th>
                     </tr>
                 </thead>
+                <tbody>
+                </tbody>
             </table>
     </body>
 </html>

@@ -25,7 +25,7 @@ function generateRow(book){
 }
 
 function appendRow(row) {
-  let table = document.querySelector("#book-table");
+  let table = document.querySelector("tbody");
   table.appendChild(row);
 }
 
